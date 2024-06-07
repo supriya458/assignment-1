@@ -19,9 +19,17 @@ class _AccountPageState extends State<AccountPage> {
           padding: const EdgeInsets.all(8.0),
           child: Icon(Icons.backspace_outlined),
         )],
-        title: Text(
-          'Account/Payment',
-          style: TextStyle(fontWeight: FontWeight.bold),
+        title: const Row(
+          children: [
+            Text(
+              'Account/',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'Payment',
+              style: TextStyle(fontWeight: FontWeight.bold,color: Colors.green),
+            ),
+          ],
         ),
       ),
       body: SingleChildScrollView(
